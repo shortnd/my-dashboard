@@ -2,6 +2,7 @@
   <h2 class="text-center text-gray-800">Latest Pushed Repo</h2>
   <div *ngIf="firstRepo;else loadingBlock">
     <h3>{{ firstRepo.name }}</h3>
+    <h4 *ngIf="firstRepo.owner">{{ firstRepo.owner.login }}</h4>
   </div>
   <ng-template #loadingBlock>
     Loading working!!!
