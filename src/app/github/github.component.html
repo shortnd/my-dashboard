@@ -1,0 +1,9 @@
+<div class="shadow p-4">
+  <h2 class="text-center text-gray-800">Latest Pushed Repo</h2>
+  <div *ngIf="firstRepo;else loadingBlock">
+    <h3>{{ firstRepo.name }}</h3>
+  </div>
+  <ng-template #loadingBlock>
+    Loading working!!!
+  </ng-template>
+</div>
